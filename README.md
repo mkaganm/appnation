@@ -1,4 +1,4 @@
-# Playwright Automation Framework - Page Object Model
+﻿# Playwright Automation Framework - Page Object Model
 
 A scalable test automation framework using Playwright and Page Object Model (POM) pattern for ChatBot AI testing.
 
@@ -285,56 +285,3 @@ The HTML report includes:
 | `make clean` | Clean test results |
 | `make clean-all` | Clean everything including node_modules |
 | `make all` | Install, test, and show report |
-
-## �🐛 Troubleshooting
-
-**Makefile not working on Windows:**
-- Install `make` via Chocolatey: `choco install make`
-- Or use NPM scripts instead
-
-**Browser doesn't open:**
-- Make sure Chrome is installed
-- Run `npx playwright install chrome` or `make install`
-
-**"Target closed" error:**
-- Ensure Chrome is completely closed before running
-- Check Task Manager for chrome.exe processes
-
-**Element not found:**
-- Check if selectors in page object are correct
-- Increase timeout in playwright.config.js
-- Add wait before action
-
-**Tests fail randomly:**
-- Increase timeouts in config
-- Add explicit waits
-- Check network conditions
-
-## 📚 Best Practices
-
-1. **Keep page objects clean** - Only page-related logic
-2. **Use meaningful method names** - Self-documenting code
-3. **Centralize selectors** - Define in locators object
-4. **Handle errors properly** - Always use try-catch
-5. **Keep tests independent** - Each test should work standalone
-6. **Use config file** - Avoid hardcoded values
-7. **Add comments** - Document complex logic
-
-## 🚦 Future Enhancements
-
-- [ ] Add test reporting (Allure, HTML reports)
-- [ ] Integrate with CI/CD (GitHub Actions, Jenkins)
-- [ ] Add API testing capabilities
-- [ ] Implement data-driven testing
-- [ ] Add parallel test execution
-- [ ] Add visual regression testing
-- [ ] Implement custom logger
-- [ ] Add test retry mechanism
-
-## 📄 License
-
-ISC
-
-## 🤝 Contributing
-
-Feel free to add new page objects, tests, and features following the existing patterns!
