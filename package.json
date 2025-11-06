@@ -1,0 +1,31 @@
+{
+  "name": "playwright-chrome-profile",
+  "version": "1.0.0",
+  "description": "Playwright Test Automation Framework with Page Object Model and detailed reporting",
+  "main": "playwright.config.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:single": "playwright test chatbot.spec --headed",
+    "test:multiple": "playwright test chatbot.multiple.spec --headed",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://chatbotai.com/"
+  },
+  "keywords": [
+    "playwright",
+    "chrome",
+    "automation",
+    "page-object-model",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}
